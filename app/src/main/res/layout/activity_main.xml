@@ -21,7 +21,7 @@
         android:id="@+id/create_room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Создать комнату"
+        android:text="Добавить комнату"
         android:layout_marginTop="100dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
