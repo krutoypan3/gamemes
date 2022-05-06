@@ -7,14 +7,49 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/app_name"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/create_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Создать комнату"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_name">
+    </Button>
+
+    <EditText
+        android:id="@+id/connect_room_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите код подключения"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_room">
+    </EditText>
+
+
+    <Button
+        android:id="@+id/connect_room_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Подключиться"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connect_room_edit_text">
+    </Button>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
